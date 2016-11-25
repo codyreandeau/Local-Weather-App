@@ -5,7 +5,15 @@
 	<script type="text/javascript" src="weather.js"></script>
 	<title>Local Weather</title>
 </head>
-<body>
+<body ng-app="LocalWeather">
+  <div ng-controller="Main">
 <h1>The Current Weather in Your Neck of the Woods!</h1>
+        <div class="weather">
+          <p>{{Data.city}}</p>
+          <p>{{Data.temp}} &#176;<span class="temp">{{Data.unit}}</span></p>
+          <p>{{Data.des}}</p>
+          <button class=btn ng-click="Data.sys()">Change Units</button>
+        </div>
+   </div>
 </body>
 </html>
