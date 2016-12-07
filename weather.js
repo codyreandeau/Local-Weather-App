@@ -9,6 +9,7 @@ app.factory('WeatherApi', function($http) {
   obj.getCurrent = function(city) {
     var units = "&units=metric";
     var conditions = "&callback=JSON_CALLBACK";
+    
     return $http.jsonp("http://api.openweathermap.org/data/2.5/weather?q=" + city + units + "&APPID=061f24cf3cde2f60644a8240302983f2" + conditions);
   };
   return obj
@@ -32,6 +33,7 @@ app.controller('Main', function($scope, WeatherApi) {
     $scope.Data.Celcius = Math.round(data.main.temp);
     return IconGen($scope.Data.des);
   }
+  
   
   $scope.Data.sys= function(){
    if($scope.Data.sysChange){

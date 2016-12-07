@@ -5,21 +5,56 @@
 }
 
 body{
-  background-color:#006666;
+  background-color:#00b0b3;
 }
 
 h1 {
   text-align:center;
-  font-size:2.8em;
+  font-size:4.4em;
   color:white;
+  margin-bottom:20px;
 }
 
 .weather{
   text-align:center;
+  color:#222;
+  border:solid #333 3px;
+  width:200px;
+  margin:auto;
+  border-radius:20px;
+  margin-bottom:30px;
 }
 
 .weather p {
   margin:5px;
   font-size:30px;
   font-weight:bold;
+}
+
+.btn {
+  margin-bottom:15px;
+  border-radius:10px;
+  color:#000;
+  background-color:#9999999;
+}
+
+.header {
+  width:60%;
+  margin:auto;
+}
+
+@media (max-width:950px){
+  .header {
+    width:80%;
+  }
+}
+
+@media (max-width:725px){
+  .header {
+    width:90%;
+  }
+  
+  h1 {
+    font-size:3.8em;
+  }
 }
