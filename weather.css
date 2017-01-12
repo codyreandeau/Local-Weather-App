@@ -16,6 +16,7 @@ h1 {
 }
 
 .weather{
+  background-color:#0080ff;
   text-align:center;
   color:#222;
   border:solid #333 3px;
@@ -36,11 +37,16 @@ h1 {
   border-radius:10px;
   color:#000;
   background-color:#9999999;
+  border:solid #333 2px;
 }
 
 .header {
   width:60%;
   margin:auto;
+}
+
+.btn:focus {
+  outline: 0;
 }
 
 @media (max-width:950px){
